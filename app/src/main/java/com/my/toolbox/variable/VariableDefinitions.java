@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import static java.sql.DriverManager.println;
+
 public class VariableDefinitions {
 
     public VariableDefinitions() {
@@ -37,5 +39,18 @@ public class VariableDefinitions {
         int[] intsArray2 = new int[]{1, 2, 3, 4, 5};
 
         String[] stringsArray = new String[]{"a", "b", "c"};
+
+        do {
+            println("");
+        } while (true);
+
+        for (UserModel item : userArray) {
+            println(item.getName());
+        }
+
+        while (sum > 0) {
+            println("merhaba");
+        }
+
     }
 }
